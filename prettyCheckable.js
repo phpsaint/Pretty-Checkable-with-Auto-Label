@@ -78,6 +78,16 @@
       var classType = el.data('type') !== undefined ? el.data('type') : el.attr('type');
 
       var label = el.data('label') !== undefined ? el.data('label') : '';
+      
+      // Added an extra check whether the input has any direct label
+      // This is very much essential as label association will be generated as standard practice
+      // So code will look for any availble labels and ther is no overriode it will take direct label text
+	  if(label == ''){
+	 	var labelObject = $('label[for="'+el.attr('id')+'"]');
+		label =labelObject.html();
+		labelObject.hide();
+	  }
+  
 
       var labelPosition = el.data('labelposition') !== undefined ? 'label' + el.data('labelposition') : 'label' + this.options.labelPosition;
 
