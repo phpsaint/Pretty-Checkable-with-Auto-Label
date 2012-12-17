@@ -84,10 +84,12 @@
       // So code will look for any availble labels and ther is no overriode it will take direct label text
 	  if(label == ''){
 	 	var labelObject = $('label[for="'+el.attr('id')+'"]');
-		label =labelObject.html();
-		labelObject.hide();
+		if(labelObject.length)
+		  {
+			label =labelObject.html();
+			labelObject.hide();
+ 		  }
 	  }
-  
 
       var labelPosition = el.data('labelposition') !== undefined ? 'label' + el.data('labelposition') : 'label' + this.options.labelPosition;
 
