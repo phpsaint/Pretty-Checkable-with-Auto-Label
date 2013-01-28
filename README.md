@@ -15,8 +15,6 @@ Check the [landing page](http://arthurgouveia.com/prettyCheckable/) for a demo.
 
 ##Install & Setup
 
-[Download the files](https://github.com/arthurgouveia/prettyCheckable/zipball/master) (or [fork it](https://github.com/arthurgouveia/prettyCheckable)) and include jQuery and prettyCheckable files:
-
     <link rel="stylesheet" href="js/prettyCheckable/prettyCheckable.css">
 
     <script src="js/prettyCheckable/prettyCheckable.js"></script>
@@ -55,7 +53,7 @@ If you want to apply something to all the inputs but you need a few specific one
 		<input type="checkbox" id="PropertyIsActive" value="1" name="data[Property][is_active]">
 		<label for="PropertyIsActive">Active?</label>
 	</div>
-<pre>
+</pre>
 
 In this scenario the Label Active? will be automagically added to Pretty checkbox. This will let you write code which will work smooth even without js
 
@@ -174,4 +172,4 @@ In this scenario the Label Active? will be automagically added to Pretty checkbo
 
 ###Support
 
-* Reach me at [http://subin.me]http://subin.me
+* Reach me at http://subin.me
